@@ -1,0 +1,407 @@
+From 6897de58485cafca7c19777b7fbe1bb8a4134141 Mon Sep 17 00:00:00 2001
+From: SRINIVASDEVARAJULA
+ <36079213+SRINIVASDEVARAJULA@users.noreply.github.com>
+Date: Mon, 29 May 2023 19:21:14 +0100
+Subject: [PATCH] second commit made changes in client_test.py to update the
+ functions
+
+---
+ ...e-changes-in-client3.py-to-update-th.patch | 170 ++++++++++++++++++
+ __pycache__/client3.cpython-311.pyc           | Bin 0 -> 1909 bytes
+ __pycache__/client_test.cpython-311.pyc       | Bin 0 -> 4094 bytes
+ client_test.py                                | 109 ++++++++++-
+ 4 files changed, 276 insertions(+), 3 deletions(-)
+ create mode 100644 0001-first-commit-made-changes-in-client3.py-to-update-th.patch
+ create mode 100644 __pycache__/client3.cpython-311.pyc
+ create mode 100644 __pycache__/client_test.cpython-311.pyc
+
+diff --git a/0001-first-commit-made-changes-in-client3.py-to-update-th.patch b/0001-first-commit-made-changes-in-client3.py-to-update-th.patch
+new file mode 100644
+index 0000000..fd15a51
+--- /dev/null
++++ b/0001-first-commit-made-changes-in-client3.py-to-update-th.patch
+@@ -0,0 +1,170 @@
++From 0628f9e42ea6effbe478ee5292b523939352ef6b Mon Sep 17 00:00:00 2001
++From: SRINIVASDEVARAJULA
++ <36079213+SRINIVASDEVARAJULA@users.noreply.github.com>
++Date: Mon, 29 May 2023 12:00:18 +0100
++Subject: [PATCH] first commit made changes in client3.py to update the
++ functions
++
++---
++ .idea/.gitignore                               |  3 +++
++ .idea/Task1.iml                                | 14 ++++++++++++++
++ .idea/csv-editor.xml                           | 16 ++++++++++++++++
++ .idea/inspectionProfiles/profiles_settings.xml |  6 ++++++
++ .idea/misc.xml                                 |  4 ++++
++ .idea/modules.xml                              |  8 ++++++++
++ .idea/vcs.xml                                  |  6 ++++++
++ client3.py                                     | 13 +++++++------
++ 8 files changed, 64 insertions(+), 6 deletions(-)
++ create mode 100644 .idea/.gitignore
++ create mode 100644 .idea/Task1.iml
++ create mode 100644 .idea/csv-editor.xml
++ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
++ create mode 100644 .idea/misc.xml
++ create mode 100644 .idea/modules.xml
++ create mode 100644 .idea/vcs.xml
++
++diff --git a/.idea/.gitignore b/.idea/.gitignore
++new file mode 100644
++index 0000000..26d3352
++--- /dev/null
+++++ b/.idea/.gitignore
++@@ -0,0 +1,3 @@
+++# Default ignored files
+++/shelf/
+++/workspace.xml
++diff --git a/.idea/Task1.iml b/.idea/Task1.iml
++new file mode 100644
++index 0000000..d654a8e
++--- /dev/null
+++++ b/.idea/Task1.iml
++@@ -0,0 +1,14 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<module type="PYTHON_MODULE" version="4">
+++  <component name="NewModuleRootManager">
+++    <content url="file://$MODULE_DIR$">
+++      <excludeFolder url="file://$MODULE_DIR$/venv/ib" />
+++    </content>
+++    <orderEntry type="inheritedJdk" />
+++    <orderEntry type="sourceFolder" forTests="false" />
+++  </component>
+++  <component name="PyDocumentationSettings">
+++    <option name="format" value="PLAIN" />
+++    <option name="myDocStringFormat" value="Plain" />
+++  </component>
+++</module>
++\ No newline at end of file
++diff --git a/.idea/csv-editor.xml b/.idea/csv-editor.xml
++new file mode 100644
++index 0000000..c84315d
++--- /dev/null
+++++ b/.idea/csv-editor.xml
++@@ -0,0 +1,16 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="CsvFileAttributes">
+++    <option name="attributeMap">
+++      <map>
+++        <entry key="/test.csv">
+++          <value>
+++            <Attribute>
+++              <option name="separator" value="," />
+++            </Attribute>
+++          </value>
+++        </entry>
+++      </map>
+++    </option>
+++  </component>
+++</project>
++\ No newline at end of file
++diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
++new file mode 100644
++index 0000000..105ce2d
++--- /dev/null
+++++ b/.idea/inspectionProfiles/profiles_settings.xml
++@@ -0,0 +1,6 @@
+++<component name="InspectionProjectProfileManager">
+++  <settings>
+++    <option name="USE_PROJECT_PROFILE" value="false" />
+++    <version value="1.0" />
+++  </settings>
+++</component>
++\ No newline at end of file
++diff --git a/.idea/misc.xml b/.idea/misc.xml
++new file mode 100644
++index 0000000..f331a37
++--- /dev/null
+++++ b/.idea/misc.xml
++@@ -0,0 +1,4 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (Task1)" project-jdk-type="Python SDK" />
+++</project>
++\ No newline at end of file
++diff --git a/.idea/modules.xml b/.idea/modules.xml
++new file mode 100644
++index 0000000..4da0a6f
++--- /dev/null
+++++ b/.idea/modules.xml
++@@ -0,0 +1,8 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="ProjectModuleManager">
+++    <modules>
+++      <module fileurl="file://$PROJECT_DIR$/.idea/Task1.iml" filepath="$PROJECT_DIR$/.idea/Task1.iml" />
+++    </modules>
+++  </component>
+++</project>
++\ No newline at end of file
++diff --git a/.idea/vcs.xml b/.idea/vcs.xml
++new file mode 100644
++index 0000000..35eb1dd
++--- /dev/null
+++++ b/.idea/vcs.xml
++@@ -0,0 +1,6 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="VcsDirectoryMappings">
+++    <mapping directory="" vcs="Git" />
+++  </component>
+++</project>
++\ No newline at end of file
++diff --git a/client3.py b/client3.py
++index 3fc09b7..b441b93 100644
++--- a/client3.py
+++++ b/client3.py
++@@ -35,14 +35,15 @@ def getDataPoint(quote):
++     stock = quote['stock']
++     bid_price = float(quote['top_bid']['price'])
++     ask_price = float(quote['top_ask']['price'])
++-    price = bid_price
+++    price = (bid_price + ask_price)/2
++     return stock, bid_price, ask_price, price
++ 
++ 
++ def getRatio(price_a, price_b):
++     """ Get ratio of price_a and price_b """
++-    """ ------------- Update this function ------------- """
++-    return 1
+++    if(price_b == 0):
+++        return
+++    return price_a/price_b
++ 
++ 
++ # Main
++@@ -50,10 +51,10 @@ if __name__ == "__main__":
++     # Query the price once every N seconds.
++     for _ in iter(range(N)):
++         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
++-
++-        """ ----------- Update to get the ratio --------------- """
+++        prices = {}
++         for quote in quotes:
++             stock, bid_price, ask_price, price = getDataPoint(quote)
+++            prices[stock] = price
++             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
++ 
++-        print("Ratio %s" % getRatio(price, price))
+++        print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
++-- 
++2.39.2 (Apple Git-143)
++
+diff --git a/__pycache__/client3.cpython-311.pyc b/__pycache__/client3.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..59045ed45f2c9140394d26ee899c275f6ab1f120
+GIT binary patch
+literal 1909
+zcmaJBOKcNIbjJJf8rz8-;?N{MEJ$fFg*X9G(kK)K;#3@n5(0><DAvX^flVB5*j-cM
+zI+9g!FcJq>Lc&t1ltV>>xS*;Zj#T2(n>VtAHB}{~p14_}Cr*8{j^hNW%;(K}Gw;25
+zznP!H;e80&Uw0i62_W<jC)zE%jl8X6gdQS-2+ks{wPFo>v`-U=PZNotNkqJhG?_>M
+z{Zt|HijT`%fBFy&z}!cr$Drpa%vRe=O`)%T(}KW<mP2h0DlE5cKpS1{-Q6n{H@bJz
+zZ5;IA<<3p8{j`0A_TIaf+KBA1?Lr=ZKwgU)Nb8|dus^BohkIqZf3MDKB0^fP7SsB)
+z1M~pxp}iBJ4>&&}e%kvzCJK!K4A4G+`{)6H!5;#9bzpRV#FGdC^wS;^?%%NwsICt6
+z7^42vi#%s2$ml(PLDR1U&qFTfQKI_|XPPM-yy-Y=<H=;!%;?#hrtOT6jf{;XZ{?|V
+z=Zry4f3t4<3(?H%L=>dJD<r^t`v|~86hKAL*|B3CJG;2y%-1<1LI>aL=eqAbDY3)(
+z0V$#AD+&d$gGhxSLhE7?^PQr&B!ZW6;gmXSnIxZ~s-DfN&P}T3C?%ArxAknE+Nxu!
+zH)xJpx&s_4(H(uwG;)s0B-=4FE6nehYw1OUFlo&)GPFhO_R1R`=mcicQr6U+gv6v<
+zdDEd5j|~feK)S^r0NxgAK|+u%0Z@5+cRYF7rk0(wEhA^#)@?#>>z2Np&+5r3YOlb(
+z$x9$Sn#^PknsZJJuiasx8`PNs8)vzV7JnBiSE>Ohq1WO>BNVNCa(||j`a2S<(CYbm
+z-^UwY*ZY!gWTYM$DV_hH?MAq-+V6%BZA`kMp;D?5j8qcUg-xjzJXRBry#?(kvr||=
+zaNH|^I3N#E5fi-q<bA|959LtAJQ<Jxp>Rn3k~%8H*DzIcN%f+V)>S=6w(&*P;`(Nu
+zpoEY4x6j+iqRr1#)#ASaQ^5U;T$9xc<Pn(m003~^-&HyIZLw5rC|zZ_5$vg)x_71~
+z4p{t)U`jf@svEg<y5OJVNg`??pz4l#7}7LekdLYm=JA4Zv}MrvJDeye-Zkow&4kIb
+z=a?{+nojgHaoIL=Ot!#ybCq@Ft!&m<9JVOD7TaNRi)PZ?<<!LmhG)D4d8Tp`a{4Mw
+zr<rI#l`si(+@K7nnFRGiZ02uk@q-p~jlwlcrnRa&Oth#@nCz98&15e?w#EN$uh=XI
+zG_v@|=@pn)r%)SFzQMisBKJ<2ScO-RrC(T|!XAH~_6oqJfH7_!K{!+j^4>t<lGht3
+zR%?%@i~>hX5-gHZ!cEzahnr{z^on?}iFQB)iJ@{~OX#l&{jbB(@}<g9WvGh3JN)4A
+zz3ca{H<2Qp!!20Gjp$&d_rXAQ`q9j*`0=gy@n<K0pZIy=MfipMGW<vP%Wn6?Z2iQn
+z8=tGk=U&CHY{jp*@vHUtRX4g&k1jx_qx%8GzyKjYKrM&mRAcn?v-orBj!xA_r`*tR
+zIaT?*YHY?D@q^{*%E@~d;F*+D<<#>$?=KAAYjfK6xTe=yqi4|#W$K|!%^R<ka9JuZ
+ySI4Sj8`GO7f4uPQv*$y<oOTB%>w}YS*QBeQtt)41-e|^<H~;}?iXCsgWc&x50oY{#
+
+literal 0
+HcmV?d00001
+
+diff --git a/__pycache__/client_test.cpython-311.pyc b/__pycache__/client_test.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..b0622ce203c6eccc367ce81b6c175800c08e3123
+GIT binary patch
+literal 4094
+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
+aM?rLFPFy|p(dnzFGwdpYb}J}YfByz^hL%78
+
+literal 0
+HcmV?d00001
+
+diff --git a/client_test.py b/client_test.py
+index af2bf26..14ff5ac 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -1,5 +1,6 @@
+ import unittest
+ from client3 import getDataPoint
++from client3 import getRatio
+ 
+ class ClientTest(unittest.TestCase):
+   def test_getDataPoint_calculatePrice(self):
+@@ -7,17 +8,119 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+-    """ ------------ Add the assertion below ------------ """
++    expected_prices = [120.84, 119.775]
++    for i, quote in enumerate(quotes):
++        expected_price = expected_prices[i]
++        stock, bid_price, ask_price, price = getDataPoint(quote)
++        self.assertAlmostEqual(price, expected_price, places=2)
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+       {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+-    """ ------------ Add the assertion below ------------ """
++    expected_prices = [119.84, 119.775]  # Expected prices based on the given quotes
++    for i, quote in enumerate(quotes):
++        expected_price = expected_prices[i]
++        stock, bid_price, ask_price, price = getDataPoint(quote)
++        self.assertAlmostEqual(price, expected_price, places=2)
+ 
++  def test_getDataPoint(self):
++    # Test case: bid price and ask price are positive non-zero values
++    quote1 = {
++      "stock": "XYZ",
++      "top_bid": {
++        "price": "10.50",
++        "volume": 100
++      },
++      "top_ask": {
++        "price": "11.50",
++        "volume": 200
++      }
++    }
++    expected_result1 = ("XYZ", 10.50, 11.50, 11.0)
++    self.assertEqual(getDataPoint(quote1), expected_result1)
+ 
+-  """ ------------ Add more unit tests ------------ """
++    # Test case: bid price is zero
++    quote2 = {
++      "stock": "ABC",
++      "top_bid": {
++        "price": "0",
++        "volume": 0
++      },
++      "top_ask": {
++        "price": "5.50",
++        "volume": 100
++      }
++    }
++    expected_result2 = ("ABC", 0.0, 5.50, 2.75)
++    self.assertEqual(getDataPoint(quote2), expected_result2)
++
++    # Test case: ask price is zero
++    quote3 = {
++      "stock": "DEF",
++      "top_bid": {
++        "price": "10.50",
++        "volume": 100
++      },
++      "top_ask": {
++        "price": "0",
++        "volume": 0
++      }
++    }
++    expected_result3 = ("DEF", 10.50, 0.0, 5.25)  # Update the expected price to 5.25
++    self.assertEqual(getDataPoint(quote3), expected_result3)
++
++  def test_getDataPoint(self):
++    # Test case: bid price and ask price are positive non-zero values
++    quote1 = {
++      "stock": "XYZ",
++      "top_bid": {
++        "price": "10.50",
++        "volume": 100
++      },
++      "top_ask": {
++        "price": "11.50",
++        "volume": 200
++      }
++    }
++    expected_result1 = ("XYZ", 10.50, 11.50, 11.0)
++    self.assertEqual(getDataPoint(quote1), expected_result1)
++
++    # Test case: bid price is zero
++    quote2 = {
++      "stock": "ABC",
++      "top_bid": {
++        "price": "0",
++        "volume": 0
++      },
++      "top_ask": {
++        "price": "5.50",
++        "volume": 100
++      }
++    }
++    expected_result2 = ("ABC", 0.0, 5.50, 2.75)
++    self.assertEqual(getDataPoint(quote2), expected_result2)
++
++    # Test case: ask price is zero
++    quote3 = {
++      "stock": "DEF",
++      "top_bid": {
++        "price": "10.50",
++        "volume": 100
++      },
++      "top_ask": {
++        "price": "0",
++        "volume": 0
++      }
++    }
++    expected_result3 = ("DEF", 10.50, 0.0, 5.25)  # Update the expected price to 5.25
++    self.assertEqual(getDataPoint(quote3), expected_result3)
++
++  def test_getRatio(self):
++    self.assertEqual(getRatio(100.0, 50.0), 2.0)
++    self.assertIsNone(getRatio(100.0, 0))
++    self.assertEqual(getRatio(0, 100.0), 0.0)
+ 
+ 
+ 
+-- 
+2.39.2 (Apple Git-143)
+
